@@ -2,13 +2,13 @@ package com.example.eventclientdemo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class EventRepository implements EventHolder {
     private final List<EventItem> list;
-    private final int initialCapacity = 200;
 
     public EventRepository() {
-        this.list = new ArrayList<>(initialCapacity);
+        this.list = new CopyOnWriteArrayList<>();
     }
 
     @Override
