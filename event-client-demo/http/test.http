@@ -1,0 +1,24 @@
+POST http://localhost:8080/event
+Content-Type: application/json
+
+{
+  "eventId": "d02e63db-b536-4b74-81e8-85913d7d2ccc",
+  "message": "test1",
+  "createdAt": "2024-02-17T23:24:48.134Z"
+}
+
+###
+POST http://localhost:8080/event
+Content-Type: application/json
+
+{
+  "eventId": "52f54c6f-5c31-488b-a62a-dc74237ab9ab",
+  "message": "test2",
+  "createdAt": "2024-02-17T23:27:24.534Z"
+}
+
+###
+GET http://localhost:8080/event
+
+###
+POST http://localhost:8080/event/flush
